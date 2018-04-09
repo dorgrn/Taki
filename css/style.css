@@ -1,0 +1,25 @@
+body {
+    color: #CC0033;
+    background: #339900;
+}
+
+.shadow {
+    box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+}
+
+.card {
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+
+.deck {
+
+}
