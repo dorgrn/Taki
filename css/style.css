@@ -1,16 +1,9 @@
 body {
-    color: #CC0033;
     background: #339900;
 }
 
-.shadow {
-    box-shadow: 1px 1px 3px #000;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-}
-
 .card {
-    /* positioning and size*/
+    /* positioning and size */
     position: absolute;
     height:30%;
     width: 10%;
