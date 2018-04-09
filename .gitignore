@@ -57,3 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+#Intellij
+.DS_Store
+.idea
+
+#vscode
+.vscode
