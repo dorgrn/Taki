@@ -8,33 +8,35 @@ body {
     background: #394899;
 }
 
+.board-row {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .deck {
     grid-area: deck;
-    margin-bottom: 10%;
+}
+
+.statistcs {
+    grid-area: statistics;
 }
 
 .playZone {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     grid-area: playZone;
 }
 
-.header {
-    grid-area: header;
-}
-
 .hand {
-    width: 100%;
-    grid-area: hand;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
     flex-flow: row wrap;
-    flex: 2 2;
 }
 
-.card {
-    /* positioning and size */
-    flex-shrink: 10;
-    object-fit: contain;
 
+.card {
     /* shadow */
     box-shadow: 10px 15px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -43,10 +45,26 @@ body {
     border-radius: 10%;
     -moz-border-radius: 10%;
     -webkit-border-radius: 10%;
+
+    width: 8%;
+}
+
+/*.card:hover {*/
+    /*position:relative;*/
+    /*top: -10px;*/
+/*}*/
+
+.card-playZone{
+    width: 16%;
+}
+
+.card-deck{
+    width: 32%;
 }
 
 .container {
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-areas: "header  header header" ". playZone deck" "hand  hand  hand";
+    grid-template-areas:
+            "statistics playZone deck";
 }
