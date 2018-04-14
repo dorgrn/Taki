@@ -1,2 +1,0 @@
-# Taki
-Taki game
