@@ -49,6 +49,11 @@ body {
     width: 8%;
 }
 
+/*.card:hover {*/
+    /*position:relative;*/
+    /*top: -10px;*/
+/*}*/
+
 .card-playZone{
     width: 16%;
 }
