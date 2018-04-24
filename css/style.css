@@ -49,12 +49,30 @@ body {
     width: 8%;
 }
 
-/*.card:hover {*/
-    /*position:relative;*/
-    /*top: -10px;*/
-/*}*/
+.legal-card:hover, .illegal-card:hover {
+    position: relative;
+    top: -10px;
+    border-style: solid;
+    border-width: 5px;
+}
 
-.card-playZone{
+.legal-card:hover {
+    border-color: lime;
+}
+
+.illegal-card:hover {
+    border-color: red;
+}
+
+.legal-card:after, .illegal-card:after {
+    position: static;
+    top: 10px;
+    border-style: none;
+    border-width: 0px;
+    border-color: transparent;
+}
+
+.card-playZone {
     width: 16%;
 }
 
