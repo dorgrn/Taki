@@ -73,7 +73,8 @@ body {
 }
 
 .card-playZone {
-    width: 16%;
+    /*width: 16%;*/
+    position: absolute;
 }
 
 .card-deck{
