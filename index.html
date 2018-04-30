@@ -9,34 +9,41 @@
 
 <body>
 
-    <div class="hand board-row" id="pc">
-    </div>
+<div class="hand board-row" id="pc">
+</div>
 
-    <div class="container board-row">
+<div class="container board-row">
 
-        <div class="statistics">
-        </div>
-
-        <div class="playZone" id="playZone">
-            <!--<img src="textures/cards/1_blue.png" class="card card-playZone" />-->
-        </div>
-
-        <div class="deck" id="deck">
-            <img src="textures/cards/card_back.png" class="card card-deck">
+    <div class="stats">
+        <img src="textures/board.png" id="stats-board">
+        <div class="board_text">
+            <p id="turn_amount">Turn amount: 10</p>
+            <p id="time_elapsed_game">Time: 10:01</p>
+            <p id="turn_indicator">Your Turn</p>
+            <button class="button">Quit</button>
         </div>
     </div>
 
-
-    <div class="hand board-row" id="user">
+    <div class="playZone" id="playZone">
+        <!--<img src="textures/cards/1_blue.png" class="card card-playZone" />-->
     </div>
 
-    <script src="lib/Utils.js"></script>
-    <script src="lib/UI.js"></script>
-    <script src="lib/PlayerFactory.js"></script>
-    <script src="lib/CardFactory.js"></script>
-    <script src="lib/Manager.js"></script>
-    <script src="lib/Controller.js"></script>
-    <script src="lib/main.js"></script>
+    <div class="deck" id="deck">
+        <img src="textures/cards/card_back.png" class="card card-deck">
+    </div>
+</div>
+
+
+<div class="hand board-row" id="user">
+</div>
+
+<script src="lib/Utils.js"></script>
+<script src="lib/UI.js"></script>
+<script src="lib/PlayerFactory.js"></script>
+<script src="lib/CardFactory.js"></script>
+<script src="lib/Manager.js"></script>
+<script src="lib/Controller.js"></script>
+<script src="lib/main.js"></script>
 </body>
 
 </html>
