@@ -9,9 +9,6 @@ body {
     background: #394899;
 }
 
-h2 {
-    font-family: "arial", sans-serif;
-}
 .board-row {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -32,26 +29,32 @@ h2 {
     grid-area: stats;
 }
 
-.board_text {
+.button, .board_text {
     position: absolute;
     font-family: "Segoe Print", serif;
+    font-size: 1.5vw;
     color: white;
+}
+
+.board_text{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.button{
+.button {
     background-color: burlywood;
     border: blanchedalmond;
     font-family: "Segoe Print", serif;
     color: black;
-    padding: 15px 40px 15px 32px;
+    left: 100%;
+    top: 50%;
+    /*padding: 15px 40px 15px 32px;*/
     margin-left: 10%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    padding-top: 10px;
 }
 
 .playZone {
@@ -123,8 +126,8 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .menu-content {
@@ -136,21 +139,19 @@ h2 {
     font-size: 3vw;
 }
 
-.menu-content h2{
+.menu-content h2 {
     text-align: center;
 }
 
-.color-panel{
-    position:relative;
+.color-panel {
+    position: relative;
     width: 50%;
     height: 50%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas:
-            "redcolor yellowcolor"
-            "bluecolor greencolor";
+    grid-template-areas: "redcolor yellowcolor" "bluecolor greencolor";
     align-items: center;
 }
 
@@ -159,7 +160,6 @@ h2 {
     background-color: white;
     color: black;
     text-align: center;
-    font-size: 16px;
     font-weight: bold;
     font-size: 3vw;
     border: none;
@@ -179,15 +179,15 @@ h2 {
     cursor: pointer;
 }
 
-.color-option:hover, .close-taki:hover{
+.color-option:hover, .close-taki:hover {
     box-shadow: inset 0 0 10px #000000;
 }
 
-.close-taki:hover{
+.close-taki:hover {
     opacity: 1;
 }
 
-.color-option:active, .close-taki:active{
+.color-option:active, .close-taki:active {
     box-shadow: inset 0 0 30px #000000;
 }
 
@@ -195,14 +195,17 @@ h2 {
     grid-area: redcolor;
     background: Tomato;
 }
+
 #blue-color.color-option {
     grid-area: bluecolor;
     background: LightSkyBlue;
 }
+
 #green-color.color-option {
     grid-area: greencolor;
     background: LimeGreen;
 }
+
 #yellow-color.color-option {
     grid-area: yellowcolor;
     background: Yellow;

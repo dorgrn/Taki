@@ -17,10 +17,10 @@
     <div class="stats">
         <img src="textures/board.png" id="stats-board">
         <div class="board_text">
-            <p id="turn_amount">Turn amount: 10</p>
-            <p id="time_elapsed_game">Time: 10:01</p>
+            <p id="turn_amount">Turns: 1</p>
+            <p id="time_elapsed_game">Time: 0:00</p>
             <p id="turn_indicator">Your Turn</p>
-            <button class="button">Quit</button>
+            <button class="button" onclick="UI.showGameResults()">Quit</button>
         </div>
     </div>
 
@@ -28,37 +28,39 @@
         <!--<img src="textures/cards/1_blue.png" class="card card-playZone" />-->
     </div>
 
-        <div class="deck" id="deck">
-            <img src="textures/cards/card_back.png" class="card-deck" id="card-deck">
+    <div class="deck" id="deck">
+        <img src="textures/cards/card_back.png" class="card-deck" id="card-deck">
+    </div>
+</div>
+
+
+<div class="hand board-row" id="user">
+</div>
+
+<div class="menu-background" id="color-menu">
+    <div class="menu-content">
+        <h2>Choose color</h2>
+        <div class="color-panel">
+            <div class="color-option" id="red-color"></div>
+            <div class="color-option" id="yellow-color"></div>
+            <div class="color-option" id="green-color"></div>
+            <div class="color-option" id="blue-color"></div>
         </div>
     </div>
+</div>
 
 
-    <div class="hand board-row" id="user">
-    </div>
-
-    <div class="menu-background" id="color-menu">
-        <div class="menu-content">
-            <h2>Choose color</h2>
-            <div class="color-panel">
-                <div class="color-option" id="red-color"></div>
-                <div class="color-option" id="yellow-color"></div>
-                <div class="color-option" id="green-color"></div>
-                <div class="color-option" id="blue-color"></div>
-            </div>
-        </div>
-    </div>
-
-    <script src="lib/Utils.js"></script>
-    <script src="lib/UI.js"></script>
-    <script src="lib/PlayerFactory.js"></script>
-    <script src="lib/CardFactory.js"></script>
-    <script src="lib/Deck.js"></script>
-    <script src="lib/PlayZone.js"></script>
-    <script src="lib/HandFactory.js"></script>
-    <script src="lib/Manager.js"></script>
-    <script src="lib/Controller.js"></script>
-    <script src="lib/main.js"></script>
+<script src="lib/Utils.js"></script>
+<script src="lib/UI.js"></script>
+<script src="lib/PlayerFactory.js"></script>
+<script src="lib/CardFactory.js"></script>
+<script src="lib/Deck.js"></script>
+<script src="lib/PlayZone.js"></script>
+<script src="lib/HandFactory.js"></script>
+<script src="lib/Manager.js"></script>
+<script src="lib/Controller.js"></script>
+<script src="lib/main.js"></script>
+<script src="lib/Stats.js"></script>
 </body>
 
 </html>
