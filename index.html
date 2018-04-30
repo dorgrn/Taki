@@ -13,14 +13,13 @@
 </div>
 
 <div class="container board-row">
-
     <div class="stats">
         <img src="textures/board.png" id="stats-board">
-        <div class="board_text">
+        <div class="stats-text">
             <p id="turn_amount">Turns: 1</p>
             <p id="time_elapsed_game">Time: 0:00</p>
             <p id="turn_indicator">Your Turn</p>
-            <button class="button" onclick="UI.showGameResults()">Quit</button>
+            <button class="stats-button" id="quit-button">Quit</button>
         </div>
     </div>
 
@@ -46,6 +45,17 @@
             <div class="color-option" id="green-color"></div>
             <div class="color-option" id="blue-color"></div>
         </div>
+    </div>
+</div>
+
+<div class="menu-background" id="end-game-menu">
+    <div class="menu-content">
+        <h2>Game over</h2>
+        <p id="winner-player-text">Winner</p>
+        <p id="elapsed-time-text">Game time: 0:00</p>
+        <p id="avg-time-text">Average time per turn: 0:00</p>
+        <p id="last-card-text">Last card counter: 0</p>
+        <button class="menu-content play-again-button" id="play-again-button">Play again!</button>
     </div>
 </div>
 

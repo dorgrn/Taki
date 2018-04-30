@@ -9,6 +9,10 @@ body {
     background: #394899;
 }
 
+h2 {
+    font-family: "arial", sans-serif;
+}
+
 .board-row {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -29,27 +33,26 @@ body {
     grid-area: stats;
 }
 
-.button, .board_text {
+.stats-button, .stats-text {
     position: absolute;
     font-family: "Segoe Print", serif;
     font-size: 1.5vw;
     color: white;
 }
 
-.board_text{
+.stats-text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.button {
+.stats-button {
     background-color: burlywood;
     border: blanchedalmond;
     font-family: "Segoe Print", serif;
     color: black;
     left: 100%;
     top: 50%;
-    /*padding: 15px 40px 15px 32px;*/
     margin-left: 10%;
     text-align: center;
     text-decoration: none;
@@ -185,6 +188,10 @@ body {
 
 .close-taki:hover {
     opacity: 1;
+}
+
+.play-again-button {
+    left: 50%;
 }
 
 .color-option:active, .close-taki:active {
