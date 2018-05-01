@@ -22,44 +22,6 @@ h2 {
     grid-area: deck;
 }
 
-#stats-board {
-    width: 100%;
-    height: auto;
-    padding-left: 10%;
-}
-
-.stats {
-    position: relative;
-    grid-area: stats;
-}
-
-.stats-button, .stats-text {
-    position: absolute;
-    font-family: "Segoe Print", serif;
-    font-size: 1.5vw;
-    color: white;
-}
-
-.stats-text {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.stats-button {
-    background-color: burlywood;
-    border: blanchedalmond;
-    font-family: "Segoe Print", serif;
-    color: black;
-    left: 100%;
-    top: 50%;
-    margin-left: 10%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 10px;
-}
-
 .playZone {
     display: flex;
     align-items: flex-start;
@@ -106,7 +68,6 @@ h2 {
 }
 
 .card-playZone {
-    /*width: 16%;*/
     position: absolute;
 }
 
@@ -135,6 +96,7 @@ h2 {
 
 .menu-content {
     background-color: #fefefe;
+    font-family: "arial", sans-serif;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -146,76 +108,25 @@ h2 {
     text-align: center;
 }
 
-.color-panel {
-    position: relative;
-    width: 50%;
-    height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "redcolor yellowcolor" "bluecolor greencolor";
-    align-items: center;
-}
 
-.close-taki {
-    opacity: 0.6;
-    background-color: white;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 3vw;
-    border: none;
-    border-radius: 10%;
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.color-option {
-    position: relative;
-    padding-top: 100%;
-    width: 100%;
+.button-UI {
     margin: auto;
     cursor: pointer;
 }
 
-.color-option:hover, .close-taki:hover {
+.button-UI:hover {
     box-shadow: inset 0 0 10px #000000;
 }
 
-.close-taki:hover {
-    opacity: 1;
+button-UI:active {
+    box-shadow: inset 0 0 30px #000000;
 }
 
 .play-again-button {
     left: 50%;
 }
 
-.color-option:active, .close-taki:active {
-    box-shadow: inset 0 0 30px #000000;
-}
 
-#red-color.color-option {
-    grid-area: redcolor;
-    background: Tomato;
-}
 
-#blue-color.color-option {
-    grid-area: bluecolor;
-    background: LightSkyBlue;
-}
-
-#green-color.color-option {
-    grid-area: greencolor;
-    background: LimeGreen;
-}
-
-#yellow-color.color-option {
-    grid-area: yellowcolor;
-    background: Yellow;
-}
 
 

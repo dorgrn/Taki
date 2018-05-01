@@ -1,0 +1,37 @@
+#stats-board {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+}
+
+.stats {
+    position: relative;
+    grid-area: stats;
+}
+
+.stats-button, .stats-text {
+    position: absolute;
+    font-family: "Segoe Print", serif;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.stats-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stats-button {
+    background-color: burlywood;
+    border: blanchedalmond;
+    font-family: "Segoe Print", serif;
+    color: black;
+    left: 100%;
+    top: 50%;
+    margin-left: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 10px;
+}
