@@ -11,6 +11,17 @@ body {
 
 h2 {
     font-family: "arial", sans-serif;
+    text-align: center;
+}
+
+td, th{
+    padding: 1px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
 }
 
 .board-row {
@@ -100,14 +111,9 @@ h2 {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 40%;
-    font-size: 3vw;
+    width: 50%;
+    font-size: 1.5vw;
 }
-
-.menu-content h2 {
-    text-align: center;
-}
-
 
 .button-UI {
     margin: auto;
@@ -123,9 +129,20 @@ button-UI:active {
 }
 
 .play-again-button {
-    left: 50%;
+    background-color: lightGreen;
+    font-size: 2vw;
+    width: 50%;
+    height: 4vw;
+    text-align: center;
+    margin-top: 3vw;
+    line-height: 4vw;
 }
 
+#statsTable {
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid black;
+}
 
 
 

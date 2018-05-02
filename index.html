@@ -53,11 +53,23 @@
 <div class="menu-background" id="end-game-menu">
     <div class="menu-content">
         <h2>Game over</h2>
-        <p id="winner-player-text">Winner</p>
+        <h2 id="winner-player-text"></h2>
         <p id="elapsed-time-text">Game time: 0:00</p>
-        <p id="avg-time-text">Average time per turn: 0:00</p>
-        <p id="last-card-text">Last card counter: 0</p>
-        <button class="menu-content button-UI play-again-button" id="play-again-button">Play again!</button>
+        <table id="statsTable">
+            <tr id="statsTable-headline">
+                <td></td>
+            </tr>
+            <tr id="statsTable-averageTime">
+                <td>Average time per turn (this game):</td>
+            </tr>
+            <tr id="statsTable-averageTimeAll">
+                <td>Average time per turn (all games):</td>
+            </tr>
+            <tr id="statsTable-lastCard">
+                <td>Last card counter:</td>
+            </tr>
+        </table>
+        <div class="play-again-button button-UI" id="play-again-button">Play again!</div>
     </div>
 </div>
 
